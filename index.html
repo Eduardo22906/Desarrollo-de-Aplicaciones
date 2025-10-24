@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso: Desarrollo de Aplicaciones</title>
+
+  <style>
+    /* ====== ESTILOS GENERALES ====== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      display: flex;
+    }
+
+    /* ====== MENÚ LATERAL ====== */
+    nav {
+      width: 220px;
+      background-color: #1e293b;
+      height: 100vh;
+      padding: 20px 10px;
+      position: fixed;
+      overflow-y: auto;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    nav h3 {
+      color: #38bdf8;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 8px 0;
+    }
+
+    nav a {
+      color: #f8fafc;
+      text-decoration: none;
+      background-color: #334155;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2563eb;
+    }
+
+    /* ====== CONTENIDO PRINCIPAL ====== */
+    main {
+      margin-left: 240px;
+      padding: 20px 40px;
+      flex: 1;
+    }
+
+    header {
+      background-color: #2563eb;
+      padding: 25px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      color: white;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    header h3 {
+      font-weight: normal;
+      color: #e0f2fe;
+    }
+
+    /* ====== TARJETAS ====== */
+    section {
+      background-color: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    section h2 {
+      color: #38bdf8;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 6px;
+    }
+
+    article h3 {
+      color: #93c5fd;
+      margin-top: 20px;
+    }
+
+    ol, ul {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    /* ====== PIE DE PÁGINA ====== */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1e293b;
+      border-top: 2px solid #334155;
+      color: #cbd5e1;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navegación lateral -->
+  <nav>
+    <h3>📘 Menú</h3>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Semana 1</a></li>
+      <li><a href="#">Semana 2</a></li>
+      <li><a href="#">Semana 3</a></li>
+      <li><a href="#">Semana 4</a></li>
+      <li><a href="#">Semana 5</a></li>
+      <li><a href="#">Semana 6</a></li>
+      <li><a href="#">Semana 7</a></li>
+      <li><a href="#">Semana 8</a></li>
+      <li><a href="#">Semana 9</a></li>
+      <li><a href="#">Semana 10</a></li>
+      <li><a href="#">Semana 11</a></li>
+      <li><a href="#">Semana 12</a></li>
+      <li><a href="#">Semana 13</a></li>
+      <li><a href="#">Semana 14</a></li>
+      <li><a href="#">Semana 15</a></li>
+      <li><a href="#">Semana 16</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <header>
+      <h1>Curso: Desarrollo de Aplicaciones</h1>
+      <h3>Docente: Ramón Puente Eduardo Fredy</h3>
+    </header>
+
+    <section>
+      <h2>Bienvenido al Inicio</h2>
+
+      <article>
+        <h3>Introducción</h3>
+        <p>
+          La asignatura de <strong>Programación de Aplicaciones Móviles Web</strong> tiene como objetivo principal 
+          proporcionar a los estudiantes los conocimientos y habilidades necesarios para diseñar 
+          y desarrollar aplicaciones móviles web utilizando tecnologías y frameworks actuales.
+        </p>
+      </article>
+
+      <article>
+        <h3>Objetivos</h3>
+        <ol>
+          <li>Conocer los conceptos fundamentales de la programación de aplicaciones móviles web.</li>
+          <li>Aprender a diseñar y desarrollar aplicaciones móviles web utilizando tecnologías y frameworks actuales.</li>
+          <li>Entender la importancia de la experiencia del usuario en la creación de aplicaciones móviles web.</li>
+          <li>Desarrollar habilidades para resolver problemas y depurar código en entornos de desarrollo integrados (IDEs).</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Contenidos</h3>
+        <ol>
+          <li>Introducción a la programación de aplicaciones móviles web.</li>
+          <li>Lenguajes de programación para aplicaciones móviles web (HTML, CSS, JavaScript).</li>
+          <li>Frameworks para aplicaciones móviles web (React Native, Ionic, etc.).</li>
+          <li>Diseño de interfaces de usuario para aplicaciones móviles web.</li>
+          <li>Desarrollo de aplicaciones móviles web utilizando APIs y bases de datos.</li>
+          <li>Pruebas y depuración de aplicaciones móviles web.</li>
+          <li>Publicación y distribución de aplicaciones móviles web.</li>
+        </ol>
+      </article>
+
+      <article>
+        <h3>Evaluación</h3>
+        <p>La evaluación de esta asignatura se realizará a través de:</p>
+        <ul>
+          <li>Exámenes parciales y finales.</li>
+          <li>Proyectos prácticos individuales y grupales.</li>
+          <li>Participación y entrega de actividades semanales.</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer>
+      © 2025 Universidad Peruana Los Andes | Curso: Desarrollo de Aplicaciones
+    </footer>
+  </main>
+
+</body>
+</html>
